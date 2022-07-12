@@ -1,0 +1,262 @@
+
+  html, body, div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    scroll-behavior: smooth;
+  }
+
+  @font-face {
+    font-family: durer;
+    src: url(durer-webfont.woff);
+  }
+
+  body {
+    background: #E8E8E8;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    line-height: 2 ;
+  }
+  
+  .topnav {
+    position: relative;
+    overflow: hidden;
+    padding-top: 4rem;
+    padding-bottom: 1.5625rem;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .topnav a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #220DDD;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  div#nav{
+    text-align: center;
+  }
+  div#nav ul{
+    display: inline-block;
+  }
+  
+  .topnav-centered-books a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .topnav-centered-about a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .topnav-centered-contact a {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .topnav-centered-home a {
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+
+  /* Responsive navigation menu (for mobile devices) */
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      display: none;
+    }
+
+    .topnav {
+      padding-top: 2rem;
+    }
+
+    .mobile-home{
+      position: relative;
+      overflow: hidden;
+      padding-top: 4rem;
+      padding-bottom: 1.5625rem;
+    }
+
+    .mobile-home a:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #220DDD;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+
+
+   .layer1 span {
+    font-size: 100px !important;
+    color: #220DDD;
+  }
+
+    
+    .topnav-centered-home a {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+    }
+
+    
+  }
+  
+  body.news main, body.checkout main, body.about main, body.success main, body.error main {
+    padding: 1rem calc(100% / 5.5);
+    margin-bottom: 1.6rem;
+}
+
+.homepage {
+ justify-content: center;
+ max-width: 100%;
+ text-align: center;
+ height: 75vh;
+ display: grid;
+}
+
+.homepage a{
+ color: #220DDD !important; 
+}
+
+.homepage a:hover{
+  color: #BFFE02 !important; 
+ } 
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: #220DDD;
+}
+
+/* selected link */
+a:active {
+  color: #220DDD;
+}
+
+
+
+.layer1 span{
+  color: #fff;
+  font-size: 180px;
+  color: #220DDD;
+  font-family: 'durer', serif;
+  line-height: 1;
+}
+
+
+
+.subpage-header{
+  text-align: left;
+  font-size: 48px;
+  color: #220DDD;
+  font-family: durer;
+  src: url(durer-webfont.woff);
+}
+
+
+
+
+
+@media screen and (min-width: 601px) {
+  .hamburger {
+    float: none;
+    display: none;
+  }
+
+  .mobile-home {
+    float: none;
+    display: none;
+  }
+
+}   
+
+
+.page {
+  height: 75vh;
+
+}
+
+.page a {
+  color: #220DDD;
+}
+
+.page a:hover {
+  color: #BFFE02;
+}
+
+
+
+
+
+
+
